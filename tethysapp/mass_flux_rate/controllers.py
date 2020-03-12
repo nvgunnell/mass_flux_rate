@@ -72,3 +72,11 @@ def home(request):
     }
 
     return render(request, 'mass_flux_rate/home.html', context)
+
+    @login_required()
+def proposal(request):
+    """
+    Controller for the Proposal page
+    """
+    context={}
+    return render(request, 'dam_inventory/Proposal.html', context)
