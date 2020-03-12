@@ -29,11 +29,6 @@ class MassFluxRate(TethysAppBase):
                 url='mass-flux-rate',
                 controller='mass_flux_rate.controllers.home'
             ),
-            UrlMap(
-                name='Proposal',
-                url='Proposal',
-                controller='mass_flux_rate.controllers.Proposal'
-            ),
         )
 
         return url_maps
